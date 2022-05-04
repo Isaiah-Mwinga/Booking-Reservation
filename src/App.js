@@ -4,8 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 
-import Navbar from './components/Navbar';
 import Home from "./pages/Home/Home";
+import { Hotel } from "./pages/hotel/Hotel";
 import { List } from "./pages/List/List";
 
 
@@ -16,6 +16,7 @@ function App() {
   <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/hotels" element={<List/>}/>
+    <Route path="/hotels/:id" element={<Hotel/>}/>
   </Routes>
   </BrowserRouter>
   );
